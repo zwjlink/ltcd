@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
 )
 
 // defaultTransactionAlloc is the default size used for the backing array

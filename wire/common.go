@@ -12,7 +12,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
 )
 
 const (

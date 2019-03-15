@@ -13,7 +13,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
 )
 
 // genesisCoinbaseTx is the coinbase transaction for the genesis blocks for

@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
-	"github.com/rocpig/dash/txscript"
-	"github.com/rocpig/dashutil"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/txscript"
+	"github.com/rocpig/ltcutil"
 )
 
 const (

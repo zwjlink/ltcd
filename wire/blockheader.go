@@ -9,7 +9,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
 )
 
 // MaxBlockHeaderPayload is the maximum number of bytes a block header can be.

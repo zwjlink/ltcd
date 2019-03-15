@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rocpig/dash/wire"
+	"github.com/rocpig/ltcd/wire"
 )
 
 // TestParseOpcode tests for opcode parsing with bad data templates.

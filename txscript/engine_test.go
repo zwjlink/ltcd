@@ -7,8 +7,8 @@ package txscript
 import (
 	"testing"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
-	"github.com/rocpig/dash/wire"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/wire"
 )
 
 // TestBadPC sets the pc to a deliberately bad result then confirms that Step()

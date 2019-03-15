@@ -15,9 +15,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
-	"github.com/rocpig/dash/wire"
-	"github.com/rocpig/dashutil"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/wire"
+	"github.com/rocpig/ltcutil"
 )
 
 // scriptTestName returns a descriptive test name for the given reference script
@@ -353,7 +353,7 @@ func testScripts(t *testing.T, tests [][]interface{}, useSigCache bool) {
 
 		var (
 			witness  wire.TxWitness
-			inputAmt dashutil.Amount
+			inputAmt ltcutil.Amount
 		)
 
 		// When the first field of the test data is a slice it contains
@@ -373,7 +373,7 @@ func testScripts(t *testing.T, tests [][]interface{}, useSigCache bool) {
 				continue
 			}
 
-			inputAmt, err = dashutil.NewAmount(witnessData[len(witnessData)-1].(float64))
+			inputAmt, err = ltcutil.NewAmount(witnessData[len(witnessData)-1].(float64))
 			if err != nil {
 				t.Errorf("%s: can't parse input amt: %v",
 					name, err)
@@ -553,7 +553,7 @@ testloop:
 			continue
 		}
 
-		tx, err := dashutil.NewTxFromBytes(serializedTx)
+		tx, err := ltcutil.NewTxFromBytes(serializedTx)
 		if err != nil {
 			t.Errorf("bad test (arg 2 not msgtx %v) %d: %v", err,
 				i, test)
@@ -708,7 +708,7 @@ testloop:
 			continue
 		}
 
-		tx, err := dashutil.NewTxFromBytes(serializedTx)
+		tx, err := ltcutil.NewTxFromBytes(serializedTx)
 		if err != nil {
 			t.Errorf("bad test (arg 2 not msgtx %v) %d: %v", err,
 				i, test)

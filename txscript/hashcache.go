@@ -7,8 +7,8 @@ package txscript
 import (
 	"sync"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
-	"github.com/rocpig/dash/wire"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/wire"
 )
 
 // TxSigHashes houses the partial set of sighashes introduced within BIP0143.

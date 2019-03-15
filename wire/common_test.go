@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
 	"github.com/davecgh/go-spew/spew"
 )
 

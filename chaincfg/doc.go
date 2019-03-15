@@ -25,8 +25,8 @@
 //          "fmt"
 //          "log"
 //
-//          "github.com/rocpig/dashutil"
-//          "github.com/rocpig/dash/chaincfg"
+//          "github.com/rocpig/ltcutil"
+//          "github.com/rocpig/ltcd/chaincfg"
 //  )
 //
 //  var testnet = flag.Bool("testnet", false, "operate on the testnet Bitcoin network")
@@ -46,7 +46,7 @@
 //
 //          // Create and print new payment address, specific to the active network.
 //          pubKeyHash := make([]byte, 20)
-//          addr, err := dashutil.NewAddressPubKeyHash(pubKeyHash, chainParams)
+//          addr, err := ltcutil.NewAddressPubKeyHash(pubKeyHash, chainParams)
 //          if err != nil {
 //                  log.Fatal(err)
 //          }

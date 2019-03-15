@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/rocpig/dashutil"
+	"github.com/rocpig/ltcutil"
 )
 
 // TestMerkle tests the BuildMerkleTreeStore API.

@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rocpig/dash/wire"
+	"github.com/rocpig/ltcd/wire"
 	"github.com/davecgh/go-spew/spew"
 )
 

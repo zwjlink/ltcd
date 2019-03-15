@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/rocpig/dash/chaincfg"
+	. "github.com/rocpig/ltcd/chaincfg"
 )
 
 // Define some of the required parameters for a user-registered

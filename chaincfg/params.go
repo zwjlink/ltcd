@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rocpig/dash/chaincfg/chainhash"
-	"github.com/rocpig/dash/wire"
+	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/rocpig/ltcd/wire"
 )
 
 // These variables are the chain proof-of-work limit parameters for each default
@@ -227,10 +227,12 @@ var MainNetParams = Params{
 	Net:         wire.MainNet,
 	DefaultPort: "8333",
 	DNSSeeds: []DNSSeed{
-		{"dnsseed.darkcoin.io", true},
-		{"dnsseed.dashdot.io", true},
-		{"dnsseed.masternode.io", false},
-		{"dnsseed.dashpay.io", true},
+		{"seed.bitcoin.sipa.be", true},
+		{"dnsseed.bluematt.me", true},
+		{"dnsseed.bitcoin.dashjr.org", false},
+		{"seed.bitcoinstats.com", true},
+		{"seed.bitnodes.io", false},
+		{"seed.bitcoin.jonasschnelli.ch", true},
 	},
 
 	// Chain parameters
@@ -304,19 +306,19 @@ var MainNetParams = Params{
 	Bech32HRPSegwit: "bc", // always bc for main net
 
 	// Address encoding magics
-	PubKeyHashAddrID:        0x4c, // starts with 1
-	ScriptHashAddrID:        0x10, // starts with 3
-	PrivateKeyID:            0xcc, // starts with 5 (uncompressed) or K (compressed)
+	PubKeyHashAddrID:        0x30, // starts with 1
+	ScriptHashAddrID:        0x32, // starts with 3
+	PrivateKeyID:            0xb0, // starts with 5 (uncompressed) or K (compressed)
 	WitnessPubKeyHashAddrID: 0x06, // starts with p2
 	WitnessScriptHashAddrID: 0x0A, // starts with 7Xh
 
 	// BIP32 hierarchical deterministic extended key magics
-	HDPrivateKeyID: [4]byte{0x04, 0x88, 0xad, 0xe4}, // starts with xprv
-	HDPublicKeyID:  [4]byte{0x04, 0x88, 0xb2, 0x1e}, // starts with xpub
+	HDPrivateKeyID: [4]byte{0x01, 0x9d, 0x9c, 0xfe}, // starts with xprv
+	HDPublicKeyID:  [4]byte{0x01, 0x9d, 0xa4, 0x62}, // starts with xpub
 
 	// BIP44 coin type used in the hierarchical deterministic path for
 	// address generation.
-	HDCoinType: 5,
+	HDCoinType: 2,
 }
 
 // RegressionNetParams defines the network parameters for the regression test
@@ -401,9 +403,10 @@ var TestNet3Params = Params{
 	Net:         wire.TestNet3,
 	DefaultPort: "18333",
 	DNSSeeds: []DNSSeed{
-		{"testnet-seed.darkcoin.io", true},
-		{"testnet-seed.dashdot.io", false},
-		{"test.dnsseed.masternode.io", true},
+		{"testnet-seed.bitcoin.jonasschnelli.ch", true},
+		{"testnet-seed.bitcoin.schildbach.de", false},
+		{"seed.tbtc.petertodd.org", true},
+		{"testnet-seed.bluematt.me", false},
 	},
 
 	// Chain parameters
@@ -470,19 +473,19 @@ var TestNet3Params = Params{
 	Bech32HRPSegwit: "tb", // always tb for test net
 
 	// Address encoding magics
-	PubKeyHashAddrID:        0x8c, // starts with m or n
-	ScriptHashAddrID:        0x13, // starts with 2
+	PubKeyHashAddrID:        0x6f, // starts with m or n
+	ScriptHashAddrID:        0x3a, // starts with 2
 	WitnessPubKeyHashAddrID: 0x03, // starts with QW
 	WitnessScriptHashAddrID: 0x28, // starts with T7n
 	PrivateKeyID:            0xef, // starts with 9 (uncompressed) or c (compressed)
 
 	// BIP32 hierarchical deterministic extended key magics
-	HDPrivateKeyID: [4]byte{0x04, 0x35, 0x83, 0x94}, // starts with tprv
-	HDPublicKeyID:  [4]byte{0x04, 0x35, 0x87, 0xcf}, // starts with tpub
+	HDPrivateKeyID: [4]byte{0x04, 0x36, 0xef, 0x7d}, // starts with tprv
+	HDPublicKeyID:  [4]byte{0x04, 0x36, 0xf6, 0xe1}, // starts with tpub
 
 	// BIP44 coin type used in the hierarchical deterministic path for
 	// address generation.
-	HDCoinType: 5,
+	HDCoinType: 2,
 }
 
 // SimNetParams defines the network parameters for the simulation test Bitcoin

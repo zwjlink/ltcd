@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/rocpig/dash/btcec"
-	"github.com/rocpig/dash/chaincfg"
-	"github.com/rocpig/dash/wire"
-	"github.com/rocpig/dashutil"
+	"github.com/rocpig/ltcd/btcec"
+	"github.com/rocpig/ltcd/chaincfg"
+	"github.com/rocpig/ltcd/wire"
+	"github.com/rocpig/ltcutil"
 	"golang.org/x/crypto/ripemd160"
 )
 
@@ -131,7 +131,7 @@ func (s PkScript) Script() []byte {
 }
 
 // Address encodes the script into an address for the given chain.
-func (s PkScript) Address(chainParams *chaincfg.Params) (dashutil.Address, error) {
+func (s PkScript) Address(chainParams *chaincfg.Params) (ltcutil.Address, error) {
 	_, addrs, _, err := ExtractPkScriptAddrs(s.Script(), chainParams)
 	if err != nil {
 		return nil, fmt.Errorf("unable to parse address: %v", err)
