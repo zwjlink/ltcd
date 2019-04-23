@@ -7,7 +7,7 @@ package wire
 import (
 	"io"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
 )
 
 // MaxGetCFiltersReqRange the maximum number of filters that may be requested in

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/rocpig/ltcd/wire"
+	"github.com/zwjlink/ltcd/wire"
 )
 
 // TestParsePkScript ensures that the supported script types can be parsed

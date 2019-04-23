@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
-	"github.com/rocpig/ltcd/wire"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/wire"
 )
 
 // These variables are the chain proof-of-work limit parameters for each default

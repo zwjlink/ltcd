@@ -25,8 +25,8 @@
 //          "fmt"
 //          "log"
 //
-//          "github.com/rocpig/ltcutil"
-//          "github.com/rocpig/ltcd/chaincfg"
+//          "github.com/zwjlink/ltcutil"
+//          "github.com/zwjlink/ltcd/chaincfg"
 //  )
 //
 //  var testnet = flag.Bool("testnet", false, "operate on the testnet Bitcoin network")

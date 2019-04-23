@@ -10,7 +10,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
 )
 
 const (

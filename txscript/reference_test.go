@@ -15,9 +15,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
-	"github.com/rocpig/ltcd/wire"
-	"github.com/rocpig/ltcutil"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/wire"
+	"github.com/zwjlink/ltcutil"
 )
 
 // scriptTestName returns a descriptive test name for the given reference script

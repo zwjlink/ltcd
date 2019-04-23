@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rocpig/ltcd/chaincfg"
-	"github.com/rocpig/ltcd/wire"
-	"github.com/rocpig/ltcutil"
+	"github.com/zwjlink/ltcd/chaincfg"
+	"github.com/zwjlink/ltcd/wire"
+	"github.com/zwjlink/ltcutil"
 )
 
 // mustParseShortForm parses the passed short form script and returns the

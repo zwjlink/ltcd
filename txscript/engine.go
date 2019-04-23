@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/rocpig/ltcd/btcec"
-	"github.com/rocpig/ltcd/wire"
+	"github.com/zwjlink/ltcd/btcec"
+	"github.com/zwjlink/ltcd/wire"
 )
 
 // ScriptFlags is a bitmask defining additional operations or tests that will be

@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
 )
 
 // TestBlock tests the MsgBlock API.

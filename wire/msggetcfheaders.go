@@ -7,7 +7,7 @@ package wire
 import (
 	"io"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
 )
 
 // MsgGetCFHeaders is a message similar to MsgGetHeaders, but for committed

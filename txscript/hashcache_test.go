@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rocpig/ltcd/wire"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/zwjlink/ltcd/wire"
 )
 
 // genTestTx creates a random transaction for uses within test cases.

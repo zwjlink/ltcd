@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
-	"github.com/rocpig/ltcd/wire"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/wire"
 )
 
 // Bip16Activation is the timestamp where BIP0016 is valid to use in the

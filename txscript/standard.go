@@ -7,9 +7,9 @@ package txscript
 import (
 	"fmt"
 
-	"github.com/rocpig/ltcd/chaincfg"
-	"github.com/rocpig/ltcd/wire"
-	"github.com/rocpig/ltcutil"
+	"github.com/zwjlink/ltcd/chaincfg"
+	"github.com/zwjlink/ltcd/wire"
+	"github.com/zwjlink/ltcutil"
 )
 
 const (

@@ -7,8 +7,8 @@ package chaincfg
 import (
 	"time"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
-	"github.com/rocpig/ltcd/wire"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/wire"
 )
 
 // genesisCoinbaseTx is the coinbase transaction for the genesis blocks for

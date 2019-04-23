@@ -7,8 +7,8 @@ package txscript
 import (
 	"sync"
 
-	"github.com/rocpig/ltcd/btcec"
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/btcec"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
 )
 
 // sigCacheEntry represents an entry in the SigCache. Entries within the

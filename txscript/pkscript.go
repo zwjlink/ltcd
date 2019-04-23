@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/rocpig/ltcd/btcec"
-	"github.com/rocpig/ltcd/chaincfg"
-	"github.com/rocpig/ltcd/wire"
-	"github.com/rocpig/ltcutil"
+	"github.com/zwjlink/ltcd/btcec"
+	"github.com/zwjlink/ltcd/chaincfg"
+	"github.com/zwjlink/ltcd/wire"
+	"github.com/zwjlink/ltcutil"
 	"golang.org/x/crypto/ripemd160"
 )
 

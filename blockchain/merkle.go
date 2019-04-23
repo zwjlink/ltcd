@@ -7,11 +7,12 @@ package blockchain
 import (
 	"bytes"
 	"fmt"
+	"github.com/btcsuite/btcutil"
 	"math"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
-	"github.com/rocpig/ltcd/txscript"
-	"github.com/rocpig/ltcutil"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/txscript"
+	"github.com/zwjlink/ltcutil"
 )
 
 const (

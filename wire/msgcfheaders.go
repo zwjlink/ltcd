@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/rocpig/ltcd/chaincfg/chainhash"
+	"github.com/zwjlink/ltcd/chaincfg/chainhash"
 )
 
 const (
